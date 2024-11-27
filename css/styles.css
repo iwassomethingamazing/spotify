@@ -19,25 +19,31 @@ header {
     position: relative;
 }
 
+/* Header container to align title and icon */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header styling */
 header h1 {
     margin-bottom: 10px;
     font-size: 48px;
     color: #1DB954;
+    margin-right: 10px; /* Add space between the title and the icon */
 }
 
-header p {
-    font-size: 18px;
-    font-weight: 300;
-}
-
+/* Spotify icon styling */
 header .spotify-icon {
     position: absolute;
-    right: 20px; /* Position the icon to the right */
-    top: 10px;  /* Slightly aligned with the header text */
-    width: 50px; /* Adjust size */
+    right: 20px;
+    top: 10px;
+    width: 50px;
     height: auto;
 }
 
+/* Playlist section */
 .playlist {
     margin: 50px auto;
     text-align: center;
@@ -53,6 +59,7 @@ header .spotify-icon {
     letter-spacing: 2px;
 }
 
+/* Track container */
 .track-container {
     display: flex;
     justify-content: space-between;
@@ -61,6 +68,7 @@ header .spotify-icon {
     margin-top: 30px;
 }
 
+/* Styling each track */
 .track {
     background: rgba(0, 0, 0, 0.9);
     padding: 20px;
@@ -71,11 +79,13 @@ header .spotify-icon {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect for each track */
 .track:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);
 }
 
+/* Track description */
 .track p {
     margin-top: 10px;
     font-size: 18px;
@@ -83,6 +93,7 @@ header .spotify-icon {
     font-weight: 400;
 }
 
+/* Footer */
 footer {
     background-color: #000000;
     text-align: center;
