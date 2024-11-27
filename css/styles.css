@@ -5,20 +5,23 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'HelloFont', Arial, sans-serif;
     background: linear-gradient(to bottom right, #1DB954, #191414);
     color: white;
+    line-height: 1.6;
 }
 
 header {
     background-color: #191414;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     margin-bottom: 10px;
-    font-size: 36px;
+    font-size: 48px;
+    color: #1DB954;
 }
 
 header p {
@@ -29,35 +32,49 @@ header p {
 .playlist {
     margin: 50px auto;
     text-align: center;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
 .playlist h2 {
-    font-size: 30px;
+    font-size: 36px;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    letter-spacing: 2px;
 }
 
 .track-container {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .track {
-    background: #333;
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     text-align: center;
-    width: 320px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.track:hover {
+    transform: scale(1.05);
 }
 
 .track iframe {
     border-radius: 12px;
+    border: none;
 }
 
 .track p {
     margin-top: 10px;
     font-size: 18px;
+    color: #f1f1f1;
+    font-weight: 400;
 }
 
 footer {
@@ -68,4 +85,9 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 14px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    color: #f1f1f1;
 }
