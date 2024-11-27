@@ -6,7 +6,7 @@
 
 body {
     font-family: 'HelloFont', Arial, sans-serif;
-    background: linear-gradient(to bottom right, #1DB954, #191414);
+    background: #1a9a56; 
     color: white;
     line-height: 1.6;
 }
