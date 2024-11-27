@@ -49,20 +49,22 @@ header p {
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .track {
-    background: rgba(0, 0, 0, 0.85);  /* Darker and more lucid */
+    background: rgba(0, 0, 0, 0.9);  /* Darker background for track containers */
     padding: 20px;
-    border-radius: 12px;
+    border-radius: 16px;  /* Softer, rounder corners */
     text-align: center;
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
+    width: 280px;  /* Reduced width for a more compact look */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);  /* Softer, more defined shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .track:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);  /* Enhanced shadow on hover */
 }
 
 .track p {
