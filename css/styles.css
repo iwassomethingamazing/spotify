@@ -16,6 +16,7 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
 header h1 {
@@ -27,6 +28,14 @@ header h1 {
 header p {
     font-size: 18px;
     font-weight: 300;
+}
+
+header .spotify-icon {
+    position: absolute;
+    right: 20px; /* Position the icon to the right */
+    top: 10px;  /* Slightly aligned with the header text */
+    width: 50px; /* Adjust size */
+    height: auto;
 }
 
 .playlist {
@@ -53,18 +62,18 @@ header p {
 }
 
 .track {
-    background: rgba(0, 0, 0, 0.9);  /* Darker background for track containers */
+    background: rgba(0, 0, 0, 0.9);
     padding: 20px;
-    border-radius: 16px;  /* Softer, rounder corners */
+    border-radius: 16px;
     text-align: center;
-    width: 280px;  /* Reduced width for a more compact look */
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);  /* Softer, more defined shadow */
+    width: 280px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .track:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);  /* Enhanced shadow on hover */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);
 }
 
 .track p {
